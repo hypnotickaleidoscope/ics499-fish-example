@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hennepin County Foster Care Invoice System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+
+    <div id="page">
+
+    <header>
+      <div class="wrap-padded">
+        <div id="head">
+        <div id="logo">Hennepin County Foster Care Invoice System</div>
+        <div id="search">
+        	<input id="searchbox" type="text" name="search" placeholder="search foster resources..  ">
+        	<input type="submit" value="find" id="search-submit">
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="nav">
+    <div class="wrap-nav">
+      <ul class="nav">
+        <li class="nav"><a href="foster-dash.html">Dashboard</a></li>
+        <li class="nav-cur"><a href="foster-service-billing.html">Service Billing</a></li>
+        <li class="nav"><a href="foster-message-center.html">Message Center (0)</a></li>
+        <li class="nav-logout"><a href="index.html">Log Out</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <div id="main">
+
+    <div class="wrap-padded">
+
+        <h2 class="anchor">Service Billing (Current Month):</h2>
+
+        <div class="anchor inv-lst-cur">
+          <div class="inv-lst-int"><div class="inv-lst-date"><img src="images/invoice-icon.svg" height="26px" width="26px" /> June 2019 Invoice</div> <font color="#ff8f49" class="inv-lst-attn">(Not Complete)</font></div>
+          <div class="inv-lst-int">
+            <div class="inv-lst-prg" style="padding-right: 20px;"><img src="images/progress-gry.png" height="100%" width="100%" /><br/>Disbursed</div>
+            <div class="inv-lst-prg"><img src="images/progress-gry.png" height="100%" width="100%" /><br/>Accepted</div>
+            <div class="inv-lst-prg"><img src="images/progress-blu.png" height="100%" width="100%" /><br/>Submitted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Created</div>
+          </div>
+        </div>
+
+        <form class="invoice-form">
+
+          <table class="table-form">
+            <tr>
+              <th>Client ID</th>
+              <th>Service</th>
+              <th>Descrirption</th>
+              <th colspan="2">Service Dates</th>
+              <th>Units</th>
+              <th>Rates</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th>To</th>
+              <th>From</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>ID#</td>
+              <td>SERVICE#</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="desc-td">Child Foster Care</td>
+              <td><input type="text" value="04/01/19"></td>
+              <td><input type="text" value="04/30/19"></td>
+              <td><input type="text" value="30"></td>
+              <td>$<input type="text" value="25.64"></td>
+              <td>$<input type="text" value="169.20"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="desc-td">MAPCY</td>
+              <td><input type="text" value="04/01/19"></td>
+              <td><input type="text" value="04/30/19"></td>
+              <td><input type="text" value="30"></td>
+              <td>$<input type="text" value="13.68"></td>
+              <td>$<input type="text" value="410.40"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="desc-td">Rule 4 Admin (Intake and plan)</td>
+              <td><input type="text" value="04/01/19"></td>
+              <td><input type="text" value="04/30/19"></td>
+              <td><input type="text" value="30"></td>
+              <td>$<input type="text" value="39"></td>
+              <td>$<input type="text" value="1170.08"></td>
+            </tr>
+            <tr>
+              <td>ID#</td>
+              <td>SERVICE#</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="desc-td">Child Foster Care</td>
+              <td><input type="text" value="04/01/19"></td>
+              <td><input type="text" value="04/30/19"></td>
+              <td><input type="text" value="30"></td>
+              <td>$<input type="text" value="25.64"></td>
+              <td>$<input type="text" value="169.20"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="desc-td">MAPCY</td>
+              <td><input type="text" value="04/01/19"></td>
+              <td><input type="text" value="04/30/19"></td>
+              <td><input type="text" value="30"></td>
+              <td>$<input type="text" value="13.68"></td>
+              <td>$<input type="text" value="410.40"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="desc-td">Rule 4 Admin (Intake and plan)</td>
+              <td><input type="text" value="04/01/19"></td>
+              <td><input type="text" value="04/30/19"></td>
+              <td><input type="text" value="30"></td>
+              <td>$<input type="text" value="39"></td>
+              <td>$<input type="text" value="1170.08"></td>
+            </tr>
+            <tr>
+              <td>ID#</td>
+              <td>SERVICE#</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="desc-td">Child Foster Care</td>
+              <td><input type="text" value="04/01/19"></td>
+              <td><input type="text" value="04/30/19"></td>
+              <td><input type="text" value="30"></td>
+              <td>$<input type="text" value="25.64"></td>
+              <td>$<input type="text" value="169.20"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="desc-td">MAPCY</td>
+              <td><input type="text" value="04/01/19"></td>
+              <td><input type="text" value="04/30/19"></td>
+              <td><input type="text" value="30"></td>
+              <td>$<input type="text" value="13.68"></td>
+              <td>$<input type="text" value="410.40"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="desc-td">Rule 4 Admin (Intake and plan)</td>
+              <td><input type="text" value="04/01/19"></td>
+              <td><input type="text" value="04/30/19"></td>
+              <td><input type="text" value="30"></td>
+              <td>$<input type="text" value="39"></td>
+              <td>$<input type="text" value="1170.08"></td>
+            </tr>
+          </table>
+
+          <input type="submit" value="Submit Invoice For Approval" />
+
+        </form>
+
+        <br/><br/><br/>
+
+        <h2 class="anchor">Previous Service Billing Records:</h2>
+
+        <div class="anchor inv-lst">
+          <div class="inv-lst-int"><div class="inv-lst-date"><img src="images/invoice-icon.svg" height="26px" width="26px" /> May 2019 Invoice</div> <font color="#ff5d5d" class="inv-lst-attn">(Attention Required)</font></div>
+          <div class="inv-lst-int">
+            <div class="inv-lst-prg" style="padding-right: 20px;"><img src="images/progress-gry.png" height="100%" width="100%" /><br/>Disbursed</div>
+            <div class="inv-lst-prg"><img src="images/progress-red.png" height="100%" width="100%" /><br/>Accepted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Submitted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Created</div>
+          </div>
+        </div>
+
+        <div class="anchor inv-lst">
+          <div class="inv-lst-int"><div class="inv-lst-date"><img src="images/invoice-icon.svg" height="26px" width="26px" /> April 2019 Invoice</div> <font color="#2d5daf" class="inv-lst-attn">(Accepted by County)</font></div>
+          <div class="inv-lst-int">
+            <div class="inv-lst-prg" style="padding-right: 20px;"><img src="images/progress-blu.png" height="100%" width="100%" /><br/>Disbursed</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Accepted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Submitted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Created</div>
+          </div>
+        </div>
+
+        <div class="anchor inv-lst">
+          <div class="inv-lst-int"><div class="inv-lst-date"><img src="images/invoice-icon.svg" height="26px" width="26px" /> March 2019 Invoice</div> <font color="#34bc6d" class="inv-lst-attn">(Payment Disbursed)</font></div>
+          <div class="inv-lst-int">
+            <div class="inv-lst-prg" style="padding-right: 20px;"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Disbursed</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Accepted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br>Submitted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Created</div>
+          </div>
+        </div>
+
+        <div class="anchor inv-lst">
+          <div class="inv-lst-int"><div class="inv-lst-date"><img src="images/invoice-icon.svg" height="26px" width="26px" /> February 2019 Invoice</div> <font color="#34bc6d" class="inv-lst-attn">(Payment Disbursed)</font></div>
+          <div class="inv-lst-int">
+            <div class="inv-lst-prg" style="padding-right: 20px;"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Disbursed</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Accepted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br>Submitted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Created</div>
+          </div>
+        </div>
+
+        <div class="anchor inv-lst">
+          <div class="inv-lst-int"><div class="inv-lst-date"><img src="images/invoice-icon.svg" height="26px" width="26px" /> January 2019 Invoice</div> <font color="#34bc6d" class="inv-lst-attn">(Payment Disbursed)</font></div>
+          <div class="inv-lst-int">
+            <div class="inv-lst-prg" style="padding-right: 20px;"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Disbursed</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Accepted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br>Submitted</div>
+            <div class="inv-lst-prg"><img src="images/progress-grn.png" height="100%" width="100%" /><br/>Created</div>
+          </div>
+        </div>
+
+        <div class="anchor inv-lst" style="text-align: center; background-color: #bbb;">View Older Invoices..</div>
+
+        <br/><br/><br/><br/><br/>
+
+    </div>
+
+
+    </div>
+
+      <div id="foot">
+      TeamRocket Group Project ICS499
+      </div>
+
+    </div>
+
+    </div>
+
+    <script src="js/nav.js"></script>
+
+  </body>
+</html>
